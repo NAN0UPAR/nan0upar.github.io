@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://nan0upar.github.io/sitemap.xml
