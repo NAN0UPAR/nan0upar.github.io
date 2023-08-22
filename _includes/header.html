@@ -1,0 +1,54 @@
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KBZDTG" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<nav class="navbar sticky-top navbar-expand-md navbar-dark justify-content-center">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}/">
+            <img src="{{ site.url }}{{ site.baseurl }}/favicon.ico" width="29" height="30" style="margin-right:5px"
+                class="d-inline-block align-top" alt="">
+            {{ site.title | escape }}
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="color: yellowgreen;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                {% for item in site.data.global.t[page.lang].navbar %}
+                    {% assign url = page.url|remove:'index.html' %}
+                    {% assign hasSubItem = item.sublinks != undefined %}
+                    <li 
+                        {% if hasSubItem %} 
+                            class="nav-item dropdown"
+                        {% else %}
+                            class="nav-item" 
+                        {% endif%} 
+                        {% if page.url==link.url %} 
+                            style="color: #444; font-weight: bold" 
+                        {% endif %}>
+
+                        {% if hasSubItem %} 
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                                {{ item.name | capitalize }}
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            {% for subItem in item.sublinks %}
+                                    <a class="dropdown-item" href="{{ site.url }}{{ site.baseurl }}/{{subItem.url}}">
+                                        {{ subItem.name }}
+                                    </a>
+                            {% endfor %}
+                            </div>
+                        {% else %}
+                            <a class="nav-link" href="{{ site.url }}{{ site.baseurl }}/{{item.url}}">
+                                {{item.name | capitalize}}
+                            </a>
+                        {% endif%}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div align="right" style="margin-left: 50px;">{% include languajes.html %}</div></div>
+    </div>
+</nav>

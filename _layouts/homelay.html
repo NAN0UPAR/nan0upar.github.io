@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div id="homeid" class="col-sm-8 col-xs-12">
+  {{ content }}
+</div>
+<div id="newsid" class="col-sm-4 col-xs-12">
+  {% include sidebar.html %}
+</div>
+
+<div class="col-sm-12">
+
+  <div class="jumbotron" style="text-align:center">
+    {% contentblock openings %}
+  </div>
+
+  <div class="jumbotron">
+    {% contentblock exampleswork %}
+    <div align="right">
+      {% contentblock moreworks %}
+    </div>
+  </div>
+  <div class="jumbotron">
+    {% contentblock news %}
+    <div align="right">
+      {% contentblock morenews %}
+    </div>
+  </div>
+</div>

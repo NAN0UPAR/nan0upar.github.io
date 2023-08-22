@@ -1,0 +1,97 @@
+# Site settings
+title: NanoUpar @ UNAL - La Paz
+yourname: Esteban Rodríguez
+email: esarodriguezme@unal.edu.co
+description: Nanostructures and Applied Physics Group at UNAL La Paz campus
+baseurl: ""
+url: ""
+exturl: "https://nan0upar.github.io"
+domain: nan0upar.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+url: https://nan0upar.github.io  # the base hostname and protocol for your site, e.g. http://example.com
+
+# Google analytics ID: Remove or use your own!
+# google_analytics: 
+# google_analytics_4: 
+# google_tag_manager:
+
+# Multilingual
+languages: ["es", "en"]
+t:
+  es:
+    - id: "es"
+      name: "Español"
+    - id: "en"
+      name: "Ingles"
+  en:
+    - id: "es"
+      name: "Spanish"
+    - id: "en"
+      name: "English"
+
+#####-----------------------------------#####
+
+include:
+  - .htaccess
+  - _pages
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  parse_block_html: true # default for kramdown is false. This will enable using Markdown links
+
+
+plugins: 
+  - jekyll-scholar
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+
+scholar:
+
+  last_name: Esteban
+  first_name: [Rodriguez M.]
+
+  style: citesty
+  locale: en
+
+  source: /cv/
+  bibliography: ref.bib
+  bibliography_template: bibtemplate
+  sort_by: year, month
+  order: descending
+
+  replace_strings: true
+  join_strings: true
+
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
+
+  query: "@*"
+
+  bibliography_list_attributes:
+    reversed: "reversed"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - update_boostrap.sh
+  - switch_theme.sh
+  - tags
+  - Rakefile
+  - LICENSE
+  - .DS_Store
+  - jekcheck.sh

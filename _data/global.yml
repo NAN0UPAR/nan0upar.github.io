@@ -1,0 +1,72 @@
+t:
+  es:
+    # Footer info
+    footer:
+      about: <a href="https://unal.edu.co/" target="_blank">UNAL</a><br/><a href="http://delapaz.unal.edu.co/" target="_blank">Sede de La Paz</a><br/>Escuela de Pregrados
+      imagotipo: <br/><img src='/assets/images/simbolos/imagotipo.png' width=90% title='Logotipo diseñado por Marinela e imagotipo por Esteban!'>
+      information: <a href="mailto:jperezta@unal.edu.co" target="_blank"><i class="fa fa fa-envelope fa fa-1x"></i> Email Jaime Perez</a> <br/><a href=""><i class="fa fa fa-users fa fa-1x"></i> Explorar Vacantes</a> <br/>
+      # Pages shown in header
+    navbar:
+      - name: Inicio
+        url: es/home
+        icon: fa fa-home
+      - name: Noticias
+        url: es/news
+        icon: fa fa-newspaper
+      - name: Equipo
+        url: es/team
+        icon: fa fa-users
+      - name: Semilleros
+        url: es/research-seedbeds
+        icon: fa fa-flask
+        sublinks:
+          - name: SICORA
+            url: es/research-seedbeds/sicora
+          - name: ProtoPaz3D
+            url: es/research-seedbeds/protopaz3d
+          - name: SICE
+            url: es/research-seedbeds/sice
+          - name: AESEE
+            url: es/research-seedbeds/aesee
+      - name: Publicaciones
+        url: es/papers
+        icon: fa fa-book
+      - name: Eventos
+        url: es/events
+        icon: fa fa-calendar
+  en:
+    # Footer info
+    footer:
+      about: <a href="https://unal.edu.co/" target="_blank">UNAL</a><br/><a href="http://delapaz.unal.edu.co/" target="_blank">La Paz Campus</a><br/>Escuela de Pregrados
+      imagotipo: <br/><img src='/assets/images/simbolos/imagotipo.png' width=90% title='Logo designed by Marinela & combination mark by Esteban!'>
+      information: <a href="mailto:jperezta@unal.edu.co" target="_blank"><i class="fa fa fa-envelope fa fa-1x"></i> Email Jaime Perez</a> <br/><a href=""><i class="fa fa fa-users fa fa-1x"></i> Explore openings</a> <br/>
+      # Pages shown in header
+    navbar:
+      - name: Home
+        url: en/home
+        icon: fa fa-home
+      - name: News
+        url: en/news
+        icon: fa fa-newspaper-o
+      - name: Team
+        url: en/team
+        icon: fa fa-users
+      - name: Research Seedbeds
+        url: en/research-seedbeds
+        icon: fa fa-flask
+        sublinks:
+          - name: SICORA
+            url: en/research-seedbeds/sicora
+          - name: ProtoPaz3D
+            url: en/research-seedbeds/protopaz3d
+          - name: SICE
+            url: en/research-seedbeds/sice
+          - name: AESEE
+            url: en/research-seedbeds/aesee
+      - name: Papers
+        url: en/papers
+        icon: fa fa-book
+      - name: Events
+        url: en/events
+        icon: fa fa-calendar
+

@@ -1,0 +1,36 @@
+<section id="footer">
+	<div class="container-footer">
+		<div class="panel-footer">
+			<div class="jumbotron row">
+				<div class="col-sm-3">
+					<h5>About</h5>
+					<p>{{ site.data.global.t[page.lang].footer.about }}</p>
+				</div>
+
+				<div class="col-sm-3">
+					<h5>Information</h5>
+					<p>{{ site.data.global.t[page.lang].footer.information }}</p>
+				</div>
+
+				<div class="col-sm-6">
+					<p>{{ site.data.global.t[page.lang].footer.imagotipo }}</p>
+				</div>
+			</div>
+
+			<center >
+				{% for lang in site.t[page.lang] %}
+				{% if lang.id == page.lang %}
+				|{{ lang.name }}|
+				{% else %}
+				{% assign future_past_lang = page.lang | append: '/' %}
+				<a href="/{{ lang.id }}{{ page.url | remove_first: future_past_lang }}">|{{ lang.name }}|</a>
+				{% endif %}
+				{% endfor %}<p>Last updated on {{ "now" | date: "%b %d, %Y" }}</br>
+					&copy 2022-{{ "now" | date: "%Y" }} NanoUpar</p>
+			</center>
+		</div>
+	</div>
+	</div>
+
+	<script src="{{ base.url | prepend: site.url }}/assets/js/bootstrap/jquery.min.js"></script>.
+	<script src="{{ base.url | prepend: site.url }}/assets/js/bootstrap/bootstrap.bundle.min.js"></script>.

@@ -1,0 +1,39 @@
+    <!-- This is the language switcher.
+    {% assign current_lang = page.url | replace:'/',' ' | truncatewords: 1 | remove:'...' %}
+    {% for lang in site.languages %}
+    {% if lang == current_lang %}
+    {{ lang }}
+    {% else %}
+    {% assign future_past_lang = current_lang | append: '/' %}
+    <a href="/{{ lang }}{{ page.url | remove_first: future_past_lang }}">{{ lang }}</a>
+    {% endif %}
+    {% endfor %} -->
+    <ul class="navbar-nav mr-auto">
+        {% assign current_lang = page.url | replace:'/',' ' | truncatewords: 1 | remove:'...' %}
+        {% assign hasMultiLanguaje = site.languages.size > 1 %}
+        <li 
+            {% if hasMultiLanguaje %}  
+                class="nav-item dropdown"
+            {% else %}
+                class="nav-item" 
+            {% endif%}>
+
+            {% if hasMultiLanguaje %} 
+                <i class="nav-link dropdown-toggle fa fa-language" id="navbarDropdownLanguaje" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownLanguaje">
+                    {% for lang in site.t[page.lang] %}
+                        {% if lang == page.lang %}
+                        <p class="dropdown-item">{{ lang.name }}</p>
+                        {% else %}
+                        {% assign future_past_lang = page.lang | append: '/' %}
+                        <a class="dropdown-item" href="/{{ lang.id }}{{ page.url | remove_first: future_past_lang }}">{{ lang.name }}</a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            {% else %}
+                <a class="nav-link" href="{{ site.url }}{{ site.baseurl }}/{{item.url}}">
+                    {{item.name | capitalize}}
+                </a>
+            {% endif%}
+        </li>
+    </ul>

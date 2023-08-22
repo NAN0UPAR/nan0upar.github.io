@@ -1,0 +1,27 @@
+t:
+  es:
+    - title: Bienvenidos!
+      text: La propiedades en las nanoestructuras y de las nanopartículas son parte fundamental de la nanociencia y la nanotecnología, ya que la mayoría de los nano-dispositivos estarán formados por estos diminutos objetos. Materiales a los que tradicionalmente no prestamos valor, exhiben características muy diferentes de lo que se esperaría si se considerara un objeto macroscópico hecho del mismo material en la escala Nano. El control de las propiedades de estas estructuras juegan un papel importante debido al potencial de cambiar su comportamiento según la necesidad o aplicación deseada. El **Grupo de nanoestructuras y física aplicada** en la UNAL sede La Paz considera el enorme potencial transformador en áreas como calidad del agua, generación/recuperación de energía, uso de sensores NPK para el sector agropecuario, recubrimientos duros en herramientas de corte, entre otros. con un enfoque caracterizado por la interdisciplinariedad y transdisciplinariedad de sus integrantes se tiene como objetivo el cierre de brechas que existe entre las zonas rurales y urbanas del Caribe colombiano en lo que respecta a Nanociencia, nanotecnología y las tecnologías convergentes a estas.
+      works: > 
+        SISMA es un sistema de monitoreo de parámetros físicos químicos que permite el monitoreo de temperatura, humedad y presión atmosférica, así como humedad y temperatura de suelo de forma remota. Esto haciendo uso de IoT, lo cual tiene una fuerte relación con el aprovechamiento de la información a través de la industria 4.0 y el Big data.
+
+        <center>
+        <img src="/assets/images/content/home/example_work.png" width="50%"/><br/>
+        </center>
+
+        <br/>SISMA es un prototipo de bajo costo, fácil uso y modular que tiene la capacidad de medir hasta 5 parámetros y hacer envío de información de manera remota a través de bluetooth o wifi.
+  en:
+    - title: Welcome!
+      text: The properties of nanostructures and nanoparticles are a fundamental part of nanoscience and nanotechnology, as most nano-devices will be made up of these tiny objects. Materials that we traditionally do not value, exhibit very different characteristics from what would be expected when considering a macroscopic object made of the same material at the Nano scale. Controlling the properties of these structures plays an important role because of the potential to change their behavior according to the desired need or application. The **Group of Nanostructures and Applied Physics** at UNAL La Paz considers the enormous transformative potential in areas such as water quality, energy generation/recovery, use of NPK sensors for the agricultural sector, hard coatings on cutting tools, among others. With an approach characterized by the interdisciplinary and transdisciplinary nature of its members, the objective is to close the gaps that exist between rural and urban areas of the Colombian Caribbean in terms of nanoscience, nanotechnology and converging technologies.
+      works: >
+        SISMA is a system for monitoring physical and chemical parameters that allows monitoring temperature, humidity and atmospheric pressure, as well as soil humidity and temperature remotely. This makes use of IoT, which has a strong relationship with the use of information through Industry 4.0 and Big Data.
+
+        <center>
+        <img src="/assets/images/content/home/example_work.png" width="50%"/><br/>
+        </center>
+
+        <br/>SISMA is a low-cost, easy-to-use and modular prototype that has the ability to measure up to 5 parameters and send information remotely via bluetooth or wifi.
+
+
+
+    
